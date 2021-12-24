@@ -1,8 +1,8 @@
 const timeRandomizer = document.querySelector('.time-randomizer');
 const timeRandomizerTriger = timeRandomizer.querySelector('button');
 
-var getRandomInt = function (max) {
-  return Math.floor(Math.random() * max) + 1;
+var getRandomInt = function (maxNumber) {
+  return Math.round(Math.random() * maxNumber) + 1;
 };
 
 timeRandomizerTriger.addEventListener('click', function () {
@@ -15,7 +15,7 @@ timeRandomizerTriger.addEventListener('click', function () {
   );
 
   randomItems.forEach(function () {
-    var itemValue = getRandomInt(24);
+    var itemValue = getRandomInt(targetNumber);
     totalArray.push(itemValue);
   });
 
@@ -24,7 +24,9 @@ timeRandomizerTriger.addEventListener('click', function () {
   });
 
   randomItems.forEach(function (element, index) {
-    var setItemValue = Math.floor((totalArray[index] / totalNumber) * 24);
+    var setItemValue = Math.floor(
+      (totalArray[index] / totalNumber) * targetNumber,
+    );
 
     index === totalArray.length - 1
       ? (setItemValue = reduceNumber)

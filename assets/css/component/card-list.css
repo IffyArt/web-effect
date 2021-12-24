@@ -1,0 +1,36 @@
+.card-list {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -1rem;
+}
+.card-list li {
+  flex: 1;
+  margin: 0.5rem 1rem;
+  min-width: 220px;
+  background-color: white;
+}
+
+.card-list__image {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.card-list__image img {
+  width: 100%;
+}
+
+.card-list__header {
+  padding: 1rem 1.5rem;
+}
+
+.card-list__container {
+  padding: 1rem 1.5rem;
+}
+
+.card-list__footer {
+  padding: 1rem 1.5rem;
+  color: #8bc6ec;
+  text-align: right;
+}

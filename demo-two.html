@@ -8,46 +8,66 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <article class="navbar__container">
+        <a href="index.html" class="navbar__logo">LOGO</a>
+        <section class="navbar__links">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </section>
+      </article>
+    </nav>
     <main class="main">
       <section class="main__container">
-        <article class="time-randomizer">
-          <aside class="time-randomizer__aside">
-            <h1>時間分配產生器</h1>
-            <img src="assets/images/target.svg" alt="目標圖示" />
-          </aside>
-          <section class="time-randomize__container">
-            <p>這是一個可以隨機分配時間的產生器</p>
-            <button class="btn btn--jelly">亂數產生</button>
-            <ul class="time-randomizer__items">
-              <li>
-                <h2>工作時間：<span></span></h2>
-                <div class="time-randomizer__item-progress">
-                  <span></span>
-                </div>
-              </li>
-              <li>
-                <h2>學習時間：<span></span></h2>
-                <div class="time-randomizer__item-progress">
-                  <span></span>
-                </div>
-              </li>
-              <li>
-                <h2>休息時間：<span></span></h2>
-                <div class="time-randomizer__item-progress">
-                  <span style="width: 80%"></span>
-                </div>
-              </li>
-              <li>
-                <h2>額外時間：<span></span></h2>
-                <div class="time-randomizer__item-progress">
-                  <span></span>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
+        <ul class="card-list">
+          <li>
+            <header class="card-list__header">Lorem, ipsum dolor</header>
+            <article class="card-list__image">
+              <img src="assets/images/demo.jpg" alt="卡片展示圖片" />
+            </article>
+            <article class="card-list__container">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              sint. Cum amet iste tenetur beatae natus voluptatum quam aliquam,
+              harum ad saepe eveniet reiciendis a sunt deserunt cupiditate
+              eligendi sint?
+            </article>
+            <footer class="card-list__footer"><a>View All</a></footer>
+          </li>
+          <li>
+            <header class="card-list__header">Lorem, ipsum dolor</header>
+            <article class="card-list__image">
+              <img src="assets/images/demo_two.png" alt="卡片展示圖片" />
+            </article>
+            <article class="card-list__container">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              sint. Cum amet iste tenetur beatae natus voluptatum quam aliquam,
+              harum ad saepe eveniet reiciendis a sunt deserunt cupiditate
+              eligendi sint?
+            </article>
+            <footer class="card-list__footer"><a>View All</a></footer>
+          </li>
+          <li>
+            <header class="card-list__header">Lorem, ipsum dolor</header>
+            <article class="card-list__image">
+              <img src="assets/images/demo.jpg" alt="卡片展示圖片" />
+            </article>
+            <article class="card-list__container">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              sint. Cum amet iste tenetur beatae natus voluptatum quam aliquam,
+              harum ad saepe eveniet reiciendis a sunt deserunt cupiditate
+              eligendi sint?
+            </article>
+            <footer class="card-list__footer"><a>View All</a></footer>
+          </li>
+        </ul>
       </section>
     </main>
-    <script src="time-randomizer.js"></script>
+    <footer class="footer">
+      <article class="footer__container">Copyright © 2021 網頁學習.</article>
+    </footer>
+    <!-- <script src="assets/javascript/card-list.js"></script> -->
   </body>
 </html>
