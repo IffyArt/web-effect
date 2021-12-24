@@ -1,0 +1,39 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #8bc6ec, #9599e2);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px;
+  width: 80%;
+  height: 100%;
+}
+
+.header__directions {
+  flex: 1;
+}
+
+.header__effect-list {
+  display: flex;
+}
+
+.header__effect-list > li {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.header__effect-list > li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.header__aside {
+  width: 400px;
+}
+
+.header__aside img {
+  width: 100%;
+}

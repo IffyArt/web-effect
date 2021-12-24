@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>網頁特效學習</title>
+  </head>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <body>
+    <header class="header">
+      <main class="header__container">
+        <article class="header__directions">
+          <h1>網頁特效學習</h1>
+          <span
+            >這是一個學習網頁特效的專案，當中包含了 JavaScript 跟 CSS
+            的相互運作．</span
+          >
+          <ul class="header__effect-list">
+            <li>
+              <a class="btn btn--bubble" href="demo-one.html">範例一</a>
+            </li>
+            <li><a class="btn btn--jelly" href="demo-two.html">範例二</a></li>
+            <li><a class="btn btn--pulse" href="demo-three.html">範例三</a></li>
+            <li>
+              <a class="btn btn--border" href="demo-four.html">範例四</a>
+            </li>
+          </ul>
+        </article>
+        <aside class="header__aside">
+          <img src="assets/images/night.svg" alt="休息的夜晚" />
+        </aside>
+      </main>
+    </header>
+    <aside class="aside">
+      <ul class="aside__links">
+        <li>
+          <a href="index.html">首頁</a>
+        </li>
+        <li>
+          <a href="demo-one.html">範例一</a>
+        </li>
+        <li><a href="demo-two.html">範例二</a></li>
+        <li><a href="demo-three.html">範例三</a></li>
+        <li>
+          <a href="demo-four.html">範例四</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <section class="main__container">
+        <article class="time-randomizer">
+          <aside class="time-randomizer__aside">
+            <h1>時間分配產生器</h1>
+            <img src="assets/images/target.svg" alt="目標圖示" />
+          </aside>
+          <section class="time-randomize__container">
+            <p>這是一個可以隨機分配時間的產生器</p>
+            <button class="btn btn--jelly">亂數產生</button>
+            <ul class="time-randomizer__items">
+              <li>
+                <h2>工作時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+              <li>
+                <h2>學習時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+              <li>
+                <h2>休息時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span style="width: 80%"></span>
+                </div>
+              </li>
+              <li>
+                <h2>額外時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <div class="aside-trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script src="time-randomizer.js"></script>
+    <script src="assets/javascript/aside-trigger.js"></script>
+  </body>
+</html>

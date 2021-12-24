@@ -1,0 +1,38 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  width: 260px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 5px 16px 0px #0b325e58, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  transition: transform 300ms;
+  transform: translateX(-105%);
+}
+
+.aside.active {
+  transform: translateY(0);
+}
+
+.aside__links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.aside__links > li > a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #9599e2;
+  text-decoration: none;
+  transition: color 300ms, background-color 300ms;
+}
+
+.aside__links > li > a:hover {
+  background-color: #9599e2;
+  color: white;
+}

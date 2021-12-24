@@ -1,8 +1,13 @@
 @import url('base/reset.css');
-@import url('base/shame.css');
+@import url('shame.css');
 
 @import url('layout/body.css');
 @import url('layout/navbar.css');
 @import url('layout/header.css');
+@import url('layout/aside.css');
 @import url('layout/main.css');
 @import url('layout/footer.css');
+
+@import url('component/btn.css');
+@import url('component/aside-trigger.css');
+@import url('component/time-randomizer.css');

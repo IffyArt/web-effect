@@ -2,17 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>網頁特效學習</title>
   </head>
+  <link rel="stylesheet" href="assets/css/style.css" />
   <body>
-    <ul>
-      <li><a href="demo-one.html">範例一</a></li>
-      <li><a href="demo-one.html">範例一</a></li>
-      <li><a href="demo-one.html">範例一</a></li>
-      <li><a href="demo-one.html">範例一</a></li>
-      <li><a href="demo-one.html">範例一</a></li>
-    </ul>
+    <header class="header">
+      <main class="header__container">
+        <article class="header__directions">
+          <h1>網頁特效學習</h1>
+          <span
+            >這是一個學習網頁特效的專案，當中包含了 JavaScript 跟 CSS
+            的相互運作．</span
+          >
+          <ul class="header__effect-list">
+            <li>
+              <a class="btn btn--bubble" href="demo-one.html">範例一</a>
+            </li>
+            <li><a class="btn btn--jelly" href="demo-two.html">範例二</a></li>
+            <li><a class="btn btn--pulse" href="demo-three.html">範例三</a></li>
+            <li>
+              <a class="btn btn--border" href="demo-four.html">範例四</a>
+            </li>
+          </ul>
+        </article>
+        <aside class="header__aside">
+          <img src="assets/images/night.svg" alt="休息的夜晚" />
+        </aside>
+      </main>
+    </header>
   </body>
 </html>

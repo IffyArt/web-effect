@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隨機目標產生器</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="main__container">
+        <article class="time-randomizer">
+          <aside class="time-randomizer__aside">
+            <h1>時間分配產生器</h1>
+            <img src="assets/images/target.svg" alt="目標圖示" />
+          </aside>
+          <section class="time-randomize__container">
+            <p>這是一個可以隨機分配時間的產生器</p>
+            <button class="btn btn--jelly">亂數產生</button>
+            <ul class="time-randomizer__items">
+              <li>
+                <h2>工作時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+              <li>
+                <h2>學習時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+              <li>
+                <h2>休息時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span style="width: 80%"></span>
+                </div>
+              </li>
+              <li>
+                <h2>額外時間：<span></span></h2>
+                <div class="time-randomizer__item-progress">
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="time-randomizer.js"></script>
+  </body>
+</html>

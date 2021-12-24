@@ -1,0 +1,134 @@
+.btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+/* Bubble(泡泡) 特效 */
+
+.btn--bubble {
+  transition: color 0.4s ease-in-out;
+}
+
+.btn--bubble::before {
+  top: 100%;
+  right: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transition: transform 0.45s ease-in-out;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transform-origin: center;
+}
+
+.btn--bubble:hover {
+  color: rgb(20, 24, 150);
+  cursor: pointer;
+}
+
+.btn--bubble:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+/* Jelly(果凍) 特效 */
+
+.btn--jelly:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+/* Pulse(脈衝) 特效 */
+.btn--pulse {
+  overflow: visible;
+}
+
+.btn--pulse::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  transform-origin: center;
+}
+
+.btn--pulse:hover::before {
+  opacity: 0;
+  transform: scale(1.25);
+  transform-origin: center;
+}
+
+/* Border(邊線) 特效 */
+.btn--border {
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.btn--border::before,
+.btn--border::after {
+  z-index: 1;
+  box-sizing: border-box;
+  width: 0px;
+  height: 0px;
+  border: 2px solid transparent;
+}
+
+.btn--border::before {
+  top: 0;
+  left: 0;
+}
+
+.btn--border::after {
+  right: 0;
+  bottom: 0;
+}
+
+.btn--border:hover:before,
+.btn--border:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.btn--border:hover::before {
+  border-top-color: #4361ee;
+  border-right-color: #4361ee;
+  transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+.btn--border:hover::after {
+  border-bottom-color: #4361ee;
+  border-left-color: #4361ee;
+  transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s,
+    height 0.3s ease-out 1s;
+}
